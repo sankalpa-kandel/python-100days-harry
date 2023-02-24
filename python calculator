@@ -1,0 +1,10 @@
+a=7564
+b=2564
+c=a+b
+print("addition:",c)
+d=a-b
+print("\nsubtraction:",d)
+e=a*b
+print("\nmultiplication:",c)
+f=a/b
+print("\ndivision:",c)
