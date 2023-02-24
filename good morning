@@ -1,0 +1,11 @@
+import time
+timestamp = time.strftime('%H:%M:%S')
+print(timestamp)
+
+t = int(time.strftime('%H'))
+print(t)
+
+if(int(t)<12):
+  print("good moring sir")
+else:
+  print("goood evening sir")
