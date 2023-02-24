@@ -1,0 +1,38 @@
+
+def reverse(a):
+  x=a
+  y=x[::-1]
+  return(y)
+w=input("DO YOU WANT TO CODE OR DECODE(C/D):")
+
+if w == "C" or w == "c":
+  a = input("enter a word:")
+  if len(a) < 3:
+    print("your coded word is:",reverse(a))
+
+  else:
+    import random
+    import string
+    alphabet = string.ascii_lowercase
+    random_string1 = ''
+    random_string2 = ''
+    for i in range(3):
+        random_string1 += random.choice(alphabet)
+        random_string2 += random.choice(alphabet)
+    new_word = a[1:] + a[0]
+    print(random_string1+new_word+random_string2)
+
+elif w == "D" or w == "d":
+  a = input("enter a word:")
+  if len(a)<3:
+    print("your decoded word is:",reverse(a))
+  elif len(a)>=9:
+    new_word = a[3:-3]
+    new_word1 = new_word[-1] + new_word[:-1]
+    print(new_word1)
+  else:
+    print("invalid string")
+    
+  
+    
+   
